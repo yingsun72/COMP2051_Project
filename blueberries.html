@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+		 <title>BCFRUIT4YOU :: Blueberries</title>
+		 <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+    
+    <!-- CSS for this product-->
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.core.1.1.0.min.css" />    
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.css" />
+    
+    <!-- CSS for this example only-->
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonsample.common_.css" />
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonsample.product_.css" />
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonprettify.css" />
+    
+    <!-- Javascript for this product-->
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.core.1.1.0.min.js" type="text/javascript"></script>  
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.free.min.js" type="text/javascript"></script>      
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.lang.js" type="text/javascript"></script>
+
+    
+    <!-- CSS for this example only-->
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonprettify.js" type="text/javascript"></script>   
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051jsexample.js" type="text/javascript"></script>  
+        
+    <script type="text/javascript">
+        $(function(){            
+
+            // Create a new AJAXPaypalCart Object
+            var cart = $('#cart').DCAJAXPaypalCart({
+                width:600,
+                currency:'CAD',
+                autoOpenWhenAdd:true,
+                openNewCheckOutWindow:true,
+                //themeColor:'#333',
+                //themeDarkColor:'#FFF',
+                header:'Shopping Cart for bcFRUIT4u',
+                footer:'We accpet paypal, visa and master card. (This is a customizable footer)',
+                paypalOptions:{
+                    business:'myoon7@my.bcit.ca',
+                    page_style:'digicrafts'
+                }
+            });            
+            
+            add_button_list(cart);
+            
+        });
+
+
+    </script>
+		<script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051jsjquery-1.10.2.min.js"></script>
+        <script> $myjquery= jQuery.noConflict();</script>
+	    <script>
+		 $myjquery(document).ready(function(){
+		 	if (document.title=='BCFRUIT4YOU :: Home'){
+		 	$myjquery("header").addClass("home");
+		 	$myjquery("section").addClass("home");
+		 	$myjquery("nav#nav").addClass("home");
+		 	}
+		 	else {
+		 	$myjquery("header h1").attr({id:"headerh1"});
+		 	$myjquery('<nav class="nav_products"><ul>\
+		 		<li class="blueberry"><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsblueberries.html"><span>Blueberries</span></a></li>\
+		 		<li class="cherry"><a href="cherries.php"><span>Cherries</span></a></li>\
+		 		<li class="strawberry"><a href="strawberries.php"><span>Strawberries</span></a></li>\
+		 		<li class="grape"><a href="grapes.php"><span>Grapes</span></a></li>\
+		 		<li class="raspberry"><a href="raspberries.php"><span>Raspberries</span></a></li>\
+		 		<li class="apple"><a href="apples.php"><span>Apples</span></a></li>\
+		 		</ul></nav>').insertAfter("nav#nav");
+		 	$myjquery("nav.nav_products a").hover(function(){
+		 		$myjquery(this).find('span').css("display","block");
+		 	},function(){
+		 		$myjquery(this).find('span').css("display","none");
+		 	}
+		 	);
+
+		 	if (document.title=='BCFRUIT4YOU :: About'){
+		 	$myjquery("section").addClass("about");
+		 	$myjquery('<p class="page_title">About Us</p>').insertBefore("section.about");
+		 	}
+		 	else {
+		 	new_title=document.title.replace('BCFRUIT4YOU :: ','');
+		 	$myjquery('<p class="page_title '+new_title+'">'+new_title+'</p>').insertBefore("section");
+		 	}
+		 	}
+		 	$myjquery("header h1").html('bc<span id="whitefont">fruit</span>4u');
+		 	$myjquery('<div class="telephone"><p>TEL : 604 - XXX - YYYY</p></div>').insertAfter("nav#nav");
+		 	$myjquery('').insertAfter("nav#nav");
+		 	$myjquery('.products img').remove();
+//		 	$myjquery('section img').remove();
+		 	$myjquery('.products a').append('<span>read more..</span>');
+
+		 	$myjquery('.product div.button').addClass('buy_button');
+		 	$myjquery('.product div.buy_button').removeClass('button');
+		 	$myjquery('.caption > div.text').insertAfter('div.buy_button');
+		 	$myjquery('.product div.buy_button').html('<span>'+$myjquery('.product div.buy_button').text()+'</span>'+$myjquery('.product div.text').html());
+		 	$myjquery('.caption > div.text').remove();
+		 	
+		 	$myjquery('#map_canvas').css("height",$myjquery('#map_canvas').width()+"px");
+
+		 	$myjquery( window ).resize(function() {
+		 		$myjquery('#map_canvas').css("height",$myjquery('#map_canvas').width()+"px");
+		 	});
+
+		 });
+		 </script>
+
+  
+		<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+		 <link rel="stylesheet" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051stylesbcharvest4you.css">
+	 </head>
+	 <body>
+	 
+		 <div id="wrapper">
+			 
+			 <header>
+			 
+				 <h1><img src="images/logo.gif" alt="logo" width="800" height="150"></h1>
+				 
+			 </header>
+			 
+			 <nav id="nav"> 
+			 
+				 <ul>
+				 
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsindex.html">Home</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsabout.html">About Us</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadspickup.html">Pick Up</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadssignup.html">Sign Up</a></li>
+					 
+				 </ul>
+			   
+			 </nav>
+			 <div class="product_list_header"><div class="sub"></div><div id="cart">Cart</div></div>
+             <section class="fruit">
+
+             	<!-- this part is from database -->
+			    <div class="product">
+	                <div class="thumbnail"><img src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesblueberries_small.jpg" /></div>
+	                <div class="caption"><div class="text"><div class="main">Blueberries(20lb)</div><div class="sub">(shipping $0)</div></div><div class="button" id="blueberries">buy $40</div></div>
+	            </div>
+             	<!-- this part is from database -->
+	            
+
+				<p>Blueberries are not just native to North America, they’re native to 
+				British Columbia. So much so that BC is the second largest producer 
+				of blueberries in the entire world.</p>
+
+				<p>Blueberries are the fruits of a shrub that belong to the heath family, 
+				which includes the cranberry and bilberry as well as the azalea, mountain 
+				laurel and rhododendron. Blueberries grow in clusters and range in size 
+				from that of a small pea to a marble. They are deep in color, ranging from 
+				blue to maroon to purple-black, and feature a white-gray waxy "bloom" that 
+				covers the surface serving as a protective coat. The skin surrounds a 
+				semi-transparent flesh that encases tiny seeds.</p>
+
+				<p>The highest antioxidant capacity of all fresh fruit: Blue Berries, being 
+				very rich in anti oxidants like Anthocyanin, vitamin C, B complex, vitamin E,
+				vitamin A, copper (a very effective immune builder and anti-bacterial), 
+				selenium, zinc, iron (promotes immunity by raising haemoglobin and oxygen 
+				concentration in blood) etc. boost up your immune system and prevent infections. 
+				Once your immunity is strong, you won’t catch colds, fever, pox and all such 
+				nasty viral and bacterial communicable diseases.</p>
+
+				<p>99% of BC blueberries are grown in the Fraser Valley in Richmond, Pitt Meadows, 
+				Matsqui Prairie and Surrey.</p>
+
+				<p>Availability: June to October.</p>
+			 
+			 </section>
+
+</body>
+</html>
