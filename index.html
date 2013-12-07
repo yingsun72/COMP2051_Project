@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+		 <title>BCFRUIT4YOU :: Home</title>
+		 <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+    <!-- CSS for this product-->
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.core.1.1.0.min.css" />    
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.css" />
+    
+    <!-- CSS for this example only-->
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonsample.common_.css" />
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonsample.product_.css" />
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonprettify.css" />
+    
+    <!-- Javascript for this product-->
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.core.1.1.0.min.js" type="text/javascript"></script>  
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.free.min.js" type="text/javascript"></script>      
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.lang.js" type="text/javascript"></script>
+    
+    <!-- CSS for this example only-->
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonprettify.js" type="text/javascript"></script>   
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051jsexample.js" type="text/javascript"></script>  
+        
+    <script type="text/javascript">
+        $(function(){            
+
+            // Create a new AJAXPaypalCart Object
+            var cart = $('#cart').DCAJAXPaypalCart({
+                width:600,
+                currency:'CAD',
+                autoOpenWhenAdd:true,
+                openNewCheckOutWindow:true,
+                //themeColor:'#333',
+                //themeDarkColor:'#FFF',
+                header:'Shopping Cart for bcFRUIT4u',
+                footer:'We accpet paypal, visa and master card. (This is a customizable footer)',
+                paypalOptions:{
+                    business:'myoon7@my.bcit.ca',
+                    page_style:'digicrafts'
+                }
+            });            
+            
+            add_button_list(cart);
+            
+        });
+
+
+    </script>
+		<script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051jsjquery-1.10.2.min.js"></script>
+        <script> $myjquery= jQuery.noConflict();</script>
+	    <script>
+		 $myjquery(document).ready(function(){
+		 	if (document.title=='BCFRUIT4YOU :: Home'){
+		 	$myjquery("header").addClass("home");
+		 	$myjquery("section").addClass("home");
+		 	$myjquery("nav#nav").addClass("home");
+		 	}
+		 	else {
+		 	$myjquery("header h1").attr({id:"headerh1"});
+		 	$myjquery('<nav class="nav_products"><ul>\
+		 		<li class="blueberry"><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsblueberries.html"><span>Blueberries</span></a></li>\
+		 		<li class="cherry"><a href="cherries.php"><span>Cherries</span></a></li>\
+		 		<li class="strawberry"><a href="strawberries.php"><span>Strawberries</span></a></li>\
+		 		<li class="grape"><a href="grapes.php"><span>Grapes</span></a></li>\
+		 		<li class="raspberry"><a href="raspberries.php"><span>Raspberries</span></a></li>\
+		 		<li class="apple"><a href="apples.php"><span>Apples</span></a></li>\
+		 		</ul></nav>').insertAfter("nav#nav");
+		 	$myjquery("nav.nav_products a").hover(function(){
+		 		$myjquery(this).find('span').css("display","block");
+		 	},function(){
+		 		$myjquery(this).find('span').css("display","none");
+		 	}
+		 	);
+
+		 	if (document.title=='BCFRUIT4YOU :: About'){
+		 	$myjquery("section").addClass("about");
+		 	$myjquery('<p class="page_title">About Us</p>').insertBefore("section.about");
+		 	}
+		 	else {
+		 	new_title=document.title.replace('BCFRUIT4YOU :: ','');
+		 	$myjquery('<p class="page_title '+new_title+'">'+new_title+'</p>').insertBefore("section");
+		 	}
+		 	}
+		 	$myjquery("header h1").html('bc<span id="whitefont">fruit</span>4u');
+		 	$myjquery('<div class="telephone"><p>TEL : 604 - XXX - YYYY</p></div>').insertAfter("nav#nav");
+		 	$myjquery('').insertAfter("nav#nav");
+		 	$myjquery('.products img').remove();
+//		 	$myjquery('section img').remove();
+		 	$myjquery('.products a').append('<span>read more..</span>');
+
+		 	$myjquery('.product div.button').addClass('buy_button');
+		 	$myjquery('.product div.buy_button').removeClass('button');
+		 	$myjquery('.caption > div.text').insertAfter('div.buy_button');
+		 	$myjquery('.product div.buy_button').html('<span>'+$myjquery('.product div.buy_button').text()+'</span>'+$myjquery('.product div.text').html());
+		 	$myjquery('.caption > div.text').remove();
+		 	
+		 	$myjquery('#map_canvas').css("height",$myjquery('#map_canvas').width()+"px");
+
+		 	$myjquery( window ).resize(function() {
+		 		$myjquery('#map_canvas').css("height",$myjquery('#map_canvas').width()+"px");
+		 	});
+
+		 });
+
+// retrieve database name from url (for example "tasks")
+        var DATABASE = "/" + window.location.href.split("/")[3];
+        
+        function getProducts() {
+            $.ajax({
+                url: DATABASE + "/_design/products/_view/products",
+                success: function (data){
+                    var view = JSON.parse(data);
+                    var products = [];
+                    $(view.rows).each( function (index, item) {
+                        products.push (item.value);
+                    });
+                    displayProducts(products);
+                }
+             });
+        }		
+		
+        function displayProducts(products) {
+//            var html = "<table>";
+            $(products).each( function (index, product) {
+			  if (product.product_id == 'bb1') {       
+                $('#bb').text(product.name);
+				$('#bb_uofm').text(product.uofm);
+				$('#bb_price').text(product.price);
+			  }
+			  if (product.product_id == 'cr1') {       
+                $('#cr').text(product.name);
+				$('#cr_uofm').text(product.uofm);
+				$('#cr_price').text(product.price);
+			  }		
+			  if (product.product_id == 'sb1') {       
+                $('#sb').text(product.name);
+				$('#sb_uofm').text(product.uofm);
+				$('#sb_price').text(product.price);
+			  }		
+			  if (product.product_id == 'gp1') {       
+                $('#gp').text(product.name);
+				$('#gp_uofm').text(product.uofm);
+				$('#gp_price').text(product.price);
+			  }			
+			  if (product.product_id == 'rb1') {       
+                $('#rb').text(product.name);
+				$('#rb_uofm').text(product.uofm);
+				$('#rb_price').text(product.price);
+			  }			
+			  if (product.product_id == 'ap1') {       
+                $('#ap').text(product.name);
+				$('#ap_uofm').text(product.uofm);
+				$('#ap_price').text(product.price);
+			  }				  
+            });
+        }		
+        // create view (will fail if already existing)
+        function createView() {
+            var view = {
+               "language": "javascript",
+               "views": {
+                   "products": {
+                       "map": "function(doc) {if (doc.name) {emit(doc.name, doc);}}"
+                   }
+               }
+            }
+            $.ajax({
+                type: "PUT",
+                url: DATABASE + "/_design/products",
+                contentType: "application/json",
+                data: JSON.stringify(view)
+             });
+        }				 
+		 </script>
+
+		<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051stylesbcharvest4you.css">
+	 </head>
+	 <body onload="createView(); getProducts();">
+		 <div id="wrapper">
+			 
+			 <header>
+			 
+				 <h1><img src="images/logo.gif" alt="logo" width="800" height="150"></h1>
+				 
+			 </header>
+			 
+			 <nav id="nav"> 
+			 
+				 <ul>
+				 
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsindex.html">Home</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsabout.html">About Us</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadspickup.html">Pick Up</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadssignup.html">Sign Up</a></li>
+					 
+				 </ul>
+			   
+			 </nav>
+			 <div class="product_list_header"><div class="sub"></div><div id="cart">Cart</div></div>
+
+             <section>
+			 
+			     <p><span class="changeColor">Local food is about the future</span> Supporting local 
+				    farms today helps keep those farms in your community, ensuring that your children 
+					and grandchildren have access to nourishing, flavorful and abundant food. When you 
+					choose to buy locally, and make your choices known, you raise the consciousness of 
+					your family, friends and neighbors.
+				</p>
+				
+				<h2>=========== Featured Products ==========</h2>
+				
+				<ul class="products">
+
+				     <li class="first_product">
+					 
+					     <a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsblueberries.html">
+						 
+					         <img src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesblueberries_small.jpg" alt="blueberries" width="125" height="159">
+							 <div id="bb"></div> 
+							 <div id="bb_uofm"></div>
+							 <div id="bb_price"></div>
+						 </a>
+						 
+					     <a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsblueberries.html" class="button">Read More</a>	
+						 
+					 </li>
+					  
+				     <li class="second_product">
+					 
+					     <a href="cherries.php">
+						 
+					         <img src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagescherries_small.jpg" alt="cherries" width="128" height="159">
+							 <div id="cr"></div> 
+							 <div id="cr_uofm"></div>
+							 <div id="cr_price"></div>
+						 </a>
+						 
+					     <a href="cherries.php" class="button">Read More</a>	
+						 
+					 </li>
+                    
+				     <li class="third_product">
+					 
+					     <a href="strawberries.php">				 
+					         <img src="http://localhost/products/webpage/C%3Axampphtdocs2051imagesstrawberries_small.jpg" alt="strawberries" width="128" height="159">
+							 <div id="sb"></div> 
+							 <div id="sb_uofm"></div>
+							 <div id="sb_price"></div>							 
+						 </a>
+						 
+					     <a href="strawberries.php" class="button">Read More</a>	
+						 
+					 </li>
+					  
+				     <li class="fourth_product">
+					 
+					     <a href="grapes.php">
+						 
+					         <img src="images/grapes_small.gif" alt="grapes" width="128" height="159">
+							 <div id="gp"></div> 
+							 <div id="gp_uofm"></div>
+							 <div id="gp_price"></div>
+						 </a>
+						 
+					     <a href="grapes.php" class="button">Read More</a>	
+						 
+					 </li>
+					 
+				     <li class="fifth_product">
+					 
+					     <a href="raspberries.php">
+						 
+					         <img src="http://localhost/products/webpage/C%3Axampphtdocs2051imagesraspberries_small.jpg" alt="raspberries" width="128" height="159">
+							 <div id="rb"></div> 
+							 <div id="rb_uofm"></div>
+							 <div id="rb_price"></div>
+						 </a>
+						 
+					     <a href="raspberries.php" class="button">Read More</a>	
+						 
+					 </li>
+					 
+				     <li class="six_product">
+					 
+					     <a href="apples.php">
+						 
+					         <img src="http://localhost/products/webpage/C%3Axampphtdocs2051imagesapples_small.jpg" alt="raspberries" width="128" height="159">
+							 <div id="ap"></div> 
+							 <div id="ap_uofm"></div>
+							 <div id="ap_price"></div>
+						 </a>
+						 
+					     <a href="apples.php" class="button">Read More</a>	
+						 
+					 </li>
+
+				</ul>
+				
+			 </section>
+ 
+</body>
+</html>
