@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+		 <title>BCFRUIT4YOU :: Pickup</title>
+		 <meta charset="utf-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+    
+    <!-- CSS for this product-->
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.core.1.1.0.min.css" />    
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.css" />
+    
+    <!-- CSS for this example only-->
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonsample.common_.css" />
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonsample.product_.css" />
+    <link rel="stylesheet" type="text/css" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonprettify.css" />
+    <link rel="stylesheet" type="text/css" href="bcharvest4you.css">
+    <!-- Javascript for this product-->
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.core.1.1.0.min.js" type="text/javascript"></script>  
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.free.min.js" type="text/javascript"></script>      
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051libdc.cart.lang.js" type="text/javascript"></script>
+
+    
+    <!-- CSS for this example only-->
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051commonprettify.js" type="text/javascript"></script>   
+    <script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051jsexample.js" type="text/javascript"></script>  
+        
+    <script type="text/javascript">
+        $(function(){            
+
+            // Create a new AJAXPaypalCart Object
+            var cart = $('#cart').DCAJAXPaypalCart({
+                width:600,
+                currency:'CAD',
+                autoOpenWhenAdd:true,
+                openNewCheckOutWindow:true,
+                //themeColor:'#333',
+                //themeDarkColor:'#FFF',
+                header:'Shopping Cart for bcFRUIT4u',
+                footer:'We accpet paypal, visa and master card. (This is a customizable footer)',
+                paypalOptions:{
+                    business:'myoon7@my.bcit.ca',
+                    page_style:'digicrafts'
+                }
+            });            
+            
+            add_button_list(cart);
+            
+        });
+
+
+    </script>
+		<script src="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051jsjquery-1.10.2.min.js"></script>
+        <script> $myjquery= jQuery.noConflict();</script>
+	    <script>
+		 $myjquery(document).ready(function(){
+		 	if (document.title=='BCFRUIT4YOU :: Home'){
+		 	$myjquery("header").addClass("home");
+		 	$myjquery("section").addClass("home");
+		 	$myjquery("nav#nav").addClass("home");
+		 	}
+		 	else {
+		 	$myjquery("header h1").attr({id:"headerh1"});
+		 	$myjquery('<nav class="nav_products"><ul>\
+		 		<li class="blueberry"><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsblueberries.html"><span>Blueberries</span></a></li>\
+		 		<li class="cherry"><a href="cherries.php"><span>Cherries</span></a></li>\
+		 		<li class="strawberry"><a href="strawberries.php"><span>Strawberries</span></a></li>\
+		 		<li class="grape"><a href="grapes.php"><span>Grapes</span></a></li>\
+		 		<li class="raspberry"><a href="raspberries.php"><span>Raspberries</span></a></li>\
+		 		<li class="apple"><a href="apples.php"><span>Apples</span></a></li>\
+		 		</ul></nav>').insertAfter("nav#nav");
+		 	$myjquery("nav.nav_products a").hover(function(){
+		 		$myjquery(this).find('span').css("display","block");
+		 	},function(){
+		 		$myjquery(this).find('span').css("display","none");
+		 	}
+		 	);
+
+		 	if (document.title=='BCFRUIT4YOU :: About'){
+		 	$myjquery("section").addClass("about");
+		 	$myjquery('<p class="page_title">About Us</p>').insertBefore("section.about");
+		 	}
+		 	else {
+		 	new_title=document.title.replace('BCFRUIT4YOU :: ','');
+		 	$myjquery('<p class="page_title '+new_title+'">'+new_title+'</p>').insertBefore("section");
+		 	}
+		 	}
+		 	$myjquery("header h1").html('bc<span id="whitefont">fruit</span>4u');
+		 	$myjquery('<div class="telephone"><p>TEL : 604 - XXX - YYYY</p></div>').insertAfter("nav#nav");
+		 	$myjquery('').insertAfter("nav#nav");
+		 	$myjquery('.products img').remove();
+//		 	$myjquery('section img').remove();
+		 	$myjquery('.products a').append('<span>read more..</span>');
+
+		 	$myjquery('.product div.button').addClass('buy_button');
+		 	$myjquery('.product div.buy_button').removeClass('button');
+		 	$myjquery('.caption > div.text').insertAfter('div.buy_button');
+		 	$myjquery('.product div.buy_button').html('<span>'+$myjquery('.product div.buy_button').text()+'</span>'+$myjquery('.product div.text').html());
+		 	$myjquery('.caption > div.text').remove();
+		 	
+		 	$myjquery('#map_canvas').css("height",$myjquery('#map_canvas').width()+"px");
+
+		 	$myjquery( window ).resize(function() {
+		 		$myjquery('#map_canvas').css("height",$myjquery('#map_canvas').width()+"px");
+		 		var newfontsize=parseInt($myjquery('#wrapper').width()/900*16)+1;
+		 		if (newfontsize>16){
+		 			newfontsize=16;
+		 		}
+		 		if (newfontsize<10){
+		 			newfontsize=10;
+		 		}
+
+		 		$myjquery('html').css("font-size",newfontsize+"px");
+		 	});
+
+		 });
+		 </script>
+
+  		 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+         <script>
+ 	
+      	       var map;
+
+            	 function initialize() {	
+
+                 var myOptions = {
+
+                      zoom: 8,
+                      mapTypeId: google.maps.MapTypeId.ROADMAP
+                 };
+
+                 var all = [
+                              ["Bear Creek Park", "13750 88 Avenue", "Surrey", "BC", " V3W 3L1", "49.162590", "-122.841586"], 
+                              ["Queen Elizabeth Park", "4600 Cambie Street", "Vancouver", "BC", "V5Y 2M9", "49.241586", "-123.113480"],
+                              ["Garden City Park", "Garden City Rd", "Richmond", "BC", "V6Y 1T6", "49.165466", "-123.122887"],
+                              ["Coquitlam Centre", "2929 Barnet Highway", "Coquitlam", "BC", "V3B 5R5", "49.277467", "-122.802846"],
+                              ["Colossus Langley Cinemas", "20090 91 A Avenue", "Langley", "BC", "V1M 3Y9", "49.167637", "-122.667370"]
+            	             ];			
+
+                 var infoWindow = new google.maps.InfoWindow;
+                 map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+
+                 // Set the center of the map
+               	 var pos = new google.maps.LatLng(49.142190, -122.806549);
+                 map.setCenter(pos);
+
+                 function infoCallback(infowindow, marker) {
+
+                    return function() {
+
+                       infowindow.open(map, marker);
+                    };
+                 }	
+
+                 function setMarkers(map, all) {	
+
+                 	  for (var i in all) {	
+
+                            var name 	      = all[i][0];
+                            var address     = all[i][1];
+                            var city 	      = all[i][2];
+                            var province  	= all[i][3];
+                            var postalCode 	= all[i][4];
+                            var lat 	      = all[i][5];
+                            var lng 	      = all[i][6];
+
+                            var latlngset;
+
+                            latlngset = new google.maps.LatLng(lat, lng);
+
+                            var marker = new google.maps.Marker({  
+
+                                 map: map,  title: city,  position: latlngset  
+                            });
+
+                            var content = '<div class="map-content"><h3>' + name + '</h3>' + address + '<br />' + city + ', ' + province + ' ' + postalCode + '<br /><a href="http://maps.google.com/?daddr=' + address + ' ' + city + ', ' + province + ' ' + postalCode + '" target="_blank">Get Directions</a></div>';					
+                            var infowindow = new google.maps.InfoWindow();
+                                infowindow.setContent(content);
+
+                             google.maps.event.addListener(
+
+                                  marker, 'click', infoCallback(infowindow, marker)
+                             );
+                    }
+                 }	
+
+                 // Set all markers in the all variable
+                 setMarkers(map, all);
+              };
+              // Initializes the Google Map
+             google.maps.event.addDomListener(window, 'load', initialize);
+         </script>
+		 
+		<link href='http://fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051stylesbcharvest4you.css">
+	 </head>
+	 <body>
+	 
+		 <div id="wrapper">
+			 
+			 <header>
+			 
+				 <h1><img src="images/logo.gif" alt="logo" width="800" height="150"></h1>
+				 
+			 </header>
+			 
+			 <nav id="nav"> 
+			 
+				 <ul>
+				 
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsindex.html">Home</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadsabout.html">About Us</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadspickup.html">Pick Up</a></li>
+					 <li><a href="http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3AUsersAdministratorDownloadssignup.html">Sign Up</a></li>
+					 
+				 </ul>
+			   
+			 </nav>
+			 <div class="product_list_header"><div class="sub"></div><div id="cart">Cart</div></div>
+
+         <section>
+
+              <h1>Pick Up Locations</h1>
+
+	          <p>Please read the important information below, along with our pick up stops and times.
+	             We take great pride in bringing the Fraser Valley and Okanagen goodness to a location near you. 
+	             We will try to carry some extra produce on our trips but we cannot promise availability unless 
+	             you pre-order through our online store.
+	          </p>
+
+	          <p>Our order goes to our farmers on Monday and the truck leaves friday morning. The farmers go out
+	             and pick the produce we want Friday and we pick it up and deliver it to you immediately. So 
+	             fresh, it&rsquo;s like you picked it yourself. Of course, we always order extra but sometimes that produce 
+	             goes quickly.
+	          </p>
+
+	          <h3>Saturday:</h3>
+
+	          <p><strong><span class="changeColor">Langley</span>: Colossus Langley Cinemas - 20090 91 A Avenue from 9am - 12pm<strong><br>
+	             <strong><span class="changeColor">Coquitlam</span>: Coquitlam Centre - 2929 Barnet Highway from 2pm - 5pm</strong><br>
+	             <strong><span class="changeColor">Surrey</span>: Bear Creek Park - 13750 88 Avenue from 6pm - 9pm</strong><br>
+	          </p>
+
+	          <h3>Sundays</h3>
+
+	          <p><strong><span class="changeColor">Surrey</span>: Bear Creek Park - 13750 88 Avenue from 9am - 11am</strong><br>
+	             <strong><span class="changeColor">Richmond</span>: Garden City Park - Garden City Rd from 12pm - 3pm</strong><br>
+	             <strong><span class="changeColor">Vancouver</span>: Queen Elizabeth Park - 4600 Cambie Street from 4pm - 9pm</strong>
+	          </p>
+
+			  <div id="map_canvas"></div>
+
+		</section>
+
+	 </body>
+</html>
