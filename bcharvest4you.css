@@ -1,0 +1,504 @@
+* {
+  margin:0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+	  background-image:      url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesbg1.png);
+	  font-size:16px;
+	}
+ul{
+	padding-left:0;
+	list-style-type: none;
+}	
+#wrapper{
+	  background-color:      #fff;
+	  font-family:           lato, sans-serf;
+	  margin-left:           auto;
+	  margin-right:          auto;
+	  width:                 96%;
+	  max-width:900px;
+	  margin-top:1.25rem;
+	  padding-top:2.25rem;
+	  margin-bottom:2rem;
+	  position:relative;
+	  box-shadow:0px 0px 9px #000;
+	  overflow: hidden;
+      /*height:                750px;*/
+	}
+	
+header{
+       	height:10.5rem;
+	  	background-image:      url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesfruit1_light3.jpg);
+	  	border-top-right-radius:5.25rem;
+	  	border-bottom-right-radius:5.25rem;
+    }
+header.home{
+       	height:400px;
+    }
+header h1{
+	display:block;
+	width:100%;
+	height:10.5rem;
+	color:rgba(255,255,255,0.7);
+	padding-top:6rem;
+	font-size:5rem;
+	line-height:5rem;
+	  font-family:           verdana, sans-serf;
+}
+header h1 span#foryou{
+	display:block;
+}
+header h1 span#whitefont{
+	color:#fff;
+
+}
+header img{
+	display:none;
+}
+	
+/* ~~~~~~~~~~ NAVIGATION BAR ~~~~~~~~~~ */	
+#nav  ul
+       {
+      padding:0 7% 6rem 3%;
+    }
+	
+#nav a{
+       	color:#000;
+       	text-decoration:none;
+       	font-size:150%;
+       	text-shadow:0px 1px #ccc;
+}
+	
+#nav a:hover{
+		font-size:175%;
+	}
+	
+#nav li{ 
+	float:left; 
+	width:20%;
+	text-align:center;
+	line-height:4rem;
+	height:4rem;
+}
+
+.telephone{
+	color:#000;
+	position:absolute;
+	left:0.5rem;
+	top:0;
+	line-height:2.25rem;
+	height:2.25rem;
+	font-size:0.75rem;
+}
+#customer{
+	position:absolute;
+	color:#000;
+	left:12rem;
+	top:0;
+	line-height:2.25rem;
+	height:2.25rem;
+	font-size:0.75rem;
+}
+#customer:before{
+	contents:" | ";
+}
+#cart{
+	color:#000;
+	position:absolute;
+	right:0.5rem;
+	top:0px;
+	line-height:2.25rem;
+	height:2.25rem;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~ */
+
+section{
+	width:65%;
+	padding-right:3%;
+	float:right;
+}
+section p
+       {
+	padding-left:0;
+      font-family:           lato, sans-serf;
+      margin-bottom:2.5rem;
+      line-height:2rem;
+      overflow:hidden;
+	}	
+section.home{
+	  width:100%;
+	  padding:0;	
+}
+section.home p{
+	  width:                 80%;
+	  padding-left:          12%;
+	margin-top:3rem;
+      margin-bottom:7rem;
+      line-height:2.125rem;
+
+}
+section.home p .changeColor{
+	display:block;
+	font-size:1.25rem;
+}
+p.page_title{
+	font-size:3rem;
+	width:38%;
+	float:right;
+	text-align:right;
+	margin:40px 4% 10px ;
+	font-family:verdana;
+	font-weight:bold;
+	color:#ddd;
+}
+p.Blueberries, p.Grapes{
+	color:#dce;
+}
+p.Raspberries, p.Strawberries,p.Cherries,p.Apples{
+	color:#ecc;
+}
+.changeColor
+       {
+	  color:                 #ff0000;
+	}	
+	
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~ PRODUCTS PAGE ~~~~~~~~~~~~~~~ */
+
+h2   {
+	display:none;
+    }
+  
+.products
+       {
+    padding-bottom:        40px;
+	overflow:hidden;
+    }	
+
+.products img{
+	width:100%;
+	height:300%;
+}
+	
+.products li 
+       {
+	  margin-bottom:         30px;
+	  float:left;
+	  width:20%;
+		border-right:1px solid #fff;
+       	height:400px;
+       	position:relative;
+	}
+.products li:first-child{
+	position:absolute;
+	top:2.25em;
+	right:0px;
+		border-left:1px solid #fff;
+		border-right:0;
+}
+
+.products li:last-child{
+		border-right:0;
+
+}
+.products a{
+	text-align:right;
+	position:absolute;
+	width:100%;
+	display:block;
+	background:rgba(255,255,255,0.7);
+	bottom:0px;
+	padding:5%;
+}
+.products a span{
+	display:block;
+	font-size:68.75%;
+}
+.products a:link,
+.products a:visited,
+.products a:active,
+nav.nav_products li a:link,
+nav.nav_products li a:visited,
+nav.nav_products li a:active{
+	text-decoration:none;
+	color:#000;
+}
+.products a:hover,
+nav.nav_products li a:hover{
+	background:#fff;
+	color:#f50;
+}
+.products .button{
+	display:none;
+}
+/* ~~~~~~~~~~~~~ List Items ~~~~~~~~~~~~~ */	
+.first_product, .blueberry
+       {
+       	background:url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesblueberries_big.jpg);
+    }
+
+.second_product, .cherry
+       {  
+       	background:url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagescherries_big.jpg);  
+       }
+	
+.third_product, .strawberry
+       { 
+       	background:url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesstrawberries_big.jpg);  
+    }
+	
+.fourth_product, .grape
+       {
+       	background:url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesgrapes_big.jpg);  
+    }
+	
+.fifth_product, .raspberry
+       { 
+       	background:url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesraspberries_big.jpg);  
+    }
+	
+.six_product, .apple
+       {
+       	background:url(http://uvo1qbpv5541u2dczqn.vm.cld.sr/products/webpage/C%3Axampphtdocs2051imagesapples_big.jpg);  
+    }
+	
+ h3 {
+ 	width:10px;
+ 	font-weight: normal;
+    }
+   
+h3:hover 
+       {
+    }
+
+nav.nav_products{
+	clear:both;
+	float:left;
+	width:20%;
+	padding-bottom:5rem;
+}
+nav.nav_products ul{
+	position:relative;
+	padding-top:7.5rem;
+/*	padding-top:24rem;
+*/
+	}
+nav.nav_products li{
+	overflow:visible;
+	width:5.5rem;
+	height:5.5rem;
+	border-bottom:1px solid #fff;
+}
+
+nav.nav_products li.selected{
+	position:absolute;
+	top:0;
+	height:24rem;
+	padding-top:1rem;
+}
+nav.nav_products li.selected a{
+	display:block;
+	color:#000;
+	background:#fff;
+	width:8rem;
+	margin:7.5rem auto 0;
+	height:8rem;
+	line-height:8rem;
+	font-size:1.5rem;
+	text-align:center;
+	text-shadow:0 1px #ddd;
+	border-radius:4rem;
+	border-bottom:1px solid #aaa;
+	box-shadow:0 2px 2px #333;
+}
+nav.nav_products li a{
+display:block;
+width:5.5rem;
+height:5.5rem;
+font-size:2rem;
+padding-left:0.5rem;
+line-height: 5.5rem;
+}
+nav.nav_products li a span{
+	display:none;
+}
+
+.button
+       {
+    }
+   
+ .button:hover
+        {
+    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~ Each Fruit ~~~~~~~~~~~~~~~~~ */
+div.product{
+	float:right;
+	width:210px;
+	margin:9px 0 0 28px;
+}
+
+div.product div.thumbnail{
+	margin:5px;
+}
+
+div.product div.thumbnail img{
+	border-radius:1rem;
+	width:12.5rem;
+}
+div.product div.caption{
+
+}
+div.product div.buy_button{
+	background:#eee;
+	width:12.5rem;
+	padding:1rem 0;
+	line-height:1.5rem;
+	border-radius:1rem;
+	border:5px solid #fff;
+	text-align:center;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+div.product div.buy_button span{
+	display:block;
+	padding-bottom:1rem;
+	font-weight:bold;
+	font-size:1.25rem;
+}
+
+div.product div.buy_button:hover{
+	box-shadow:0 0px 5px #777;
+	cursor:pointer;
+}
+.fruit
+        {
+	}
+	
+.fruit h2     {
+	  width:                 10px;
+      padding-right:         250px;
+	  float:                 right;
+    }
+	
+.addToCart
+        {	
+	}
+	
+.addToCart:hover 
+       {
+    }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~ SIGNUP PAGE ~~~~~~~~~~~~~~~~~~ */
+
+    /* ~~~~~~ HANDLE FORM ~~~~~ */
+form  
+       {
+       	background:#ddd;
+       	padding:20px 40px;
+       	border-radius:15px;
+       	overflow:hidden;
+    }
+form div span{
+	display:block;
+	font-size:0.75rem;
+	color:#89a;
+	padding-left:0.75rem;
+	margin-bottom:1px;
+}
+form input{
+	padding:0.25rem 0.75rem;
+	background:#ded;
+	border-radius:0.75rem;
+	border:0;
+	box-shadow: 0 2px 1px #7a7 inset;
+
+
+}
+form div{
+	margin-bottom:3px;
+}
+form div#form_email, div#form_age, div#form_password, div#form_phonenumber{
+	padding-top:15px;
+}
+form div#form_phonenumber input{
+	margin-right:3px;
+}
+form div#form_submit{
+	float:left;
+	padding-top:42px;
+}
+form input#submit {
+	width:6.5rem;
+	margin-right:0.3rem;
+}
+
+form input#submit, form input#reset{
+
+	box-shadow: 0 1px 1px #7a7 inset;
+			background-image: -ms-linear-gradient(top, #fff 0%, #aaa 100%);
+
+			background-image: -moz-linear-gradient(top, #fff 0%, #aaa 100%);
+
+			background-image: -o-linear-gradient(top, #fff 0%, #aaa 100%);
+
+			background-image: -webkit-linear-gradient(top, #fff 0%, #aaa 100%);
+
+			background-image: linear-gradient(top, #fff 0%, #aaa 100%);
+		border:2px solid #ddd;
+}
+form input#submit:hover, form input#reset:hover{
+	color:#fff;
+		border:2px solid #fff;
+}
+     /* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+#map_canvas {
+           width:  90%;
+           margin:5%;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+
+#map_canvas iframe,   
+#map_canvas object,  
+#map_canvas embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px;
+    height: 100%;
+}
+
+#map_canvas 
+    {
+      width:       400px;
+      height:      300px;
+    }
+
+.map-content h3 
+    { 
+      margin:      0; 
+      padding:     5px 0 0 0; 
+    }
+
+footer{
+	width:100%;
+	background:#eee;
+	border-top:50px solid #fff;
+	height:50px;
+}	
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
